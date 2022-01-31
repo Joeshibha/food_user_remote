@@ -20,11 +20,11 @@ class _AuthScreenState extends State<AuthScreen> {
               decoration:const BoxDecoration(
                 gradient: LinearGradient(
                   colors:[
-                    Colors.red,Colors.purple,
+                    Colors.redAccent,Colors.orangeAccent,Colors.yellowAccent,Colors.greenAccent,Colors.lightBlueAccent,Colors.purpleAccent,
                   ],
                   begin:FractionalOffset(0.0,0.0),
                   end:FractionalOffset(1.0,0.0),
-                  stops:[0.0,1.0],
+                  stops:[0.0,0.2,0.4,0.6,0.8,1.0],
                   tileMode:TileMode.clamp,
                 ),
               ),
@@ -55,9 +55,9 @@ class _AuthScreenState extends State<AuthScreen> {
           body:Container(
             decoration:const BoxDecoration(
               gradient:LinearGradient(
-                begin:Alignment.topRight,
-                end:Alignment.bottomLeft,
-                colors:[Colors.purple,Colors.blue,Colors.yellow,Colors.red]
+                begin:Alignment.topLeft,
+                end:Alignment.bottomRight,
+                colors:[Colors.purpleAccent,Colors.lightBlueAccent,Colors.greenAccent,Colors.yellowAccent,Colors.orangeAccent,Colors.redAccent]
               ),
             ),
             child:const TabBarView(

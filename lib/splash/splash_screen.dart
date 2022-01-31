@@ -12,7 +12,7 @@ class SplashScreen extends StatefulWidget {
 class _State extends State<SplashScreen> {
   startTimer()
   {
-    Timer(const Duration(seconds:8),() async {
+    Timer(const Duration(seconds:4),() async {
       Navigator.push(context,MaterialPageRoute(builder:(c)=> const AuthScreen()));
     });
   }
